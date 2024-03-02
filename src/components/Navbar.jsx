@@ -1,25 +1,39 @@
-import React from "react";
-import "../styles/Navbar.css";
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { links } from "../data";
+import "./Navbar.css";
 
-// By importing the Navbar.css file, it is added to the DOM whenever this component loads
 const Navbar = () => {
-  const navbarStyle = {
-    backgroundColor: '#38ada9',
-    color: '#ffffff',
-    padding: '10px',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  };
-
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <nav style={navbarStyle}>
-      <h2>Navbar</h2>
-      <ul style={{ listStyle: 'none', padding: 0, display: 'flex' }}>
-        <li style={{ marginRight: '10px' }}>Home</li>
-        <li style={{ marginRight: '10px' }}>About</li>
-        <li>Contact</li>
-      </ul>
+    <nav className="nav">
+      <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
+        <ul className="nav__list">
+          {links.map(({ name, icon, path }, index) => {
+            return (
+              <li className="nav__item" key={index}>
+                <NavLink
+                  to={path}
+                  className={({ isActive }) =>
+                    isActive ? "nav__link active-nav" : "nav__link"
+                  }
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  {icon}
+                  <h3 className="nav__name">{name}</h3>
+                </NavLink>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      <div className={`${showMenu ? 'nav__toggle animate-toggle' : 'nav__toggle'}`} onClick={()=> setShowMenu(!showMenu)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   );
 };

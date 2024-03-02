@@ -1,16 +1,26 @@
-import React from "react";
-import Header from "./components/Header";
-import Section from "./components/Section";
+/* eslint-disable no-unused-vars */
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import "./App.css";
 
 import Navbar from "./components/Navbar";
+import Home from "./pages/home/Home";
+import About from "./pages/About/About";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <Header />
-      <Section />
-    </div>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
