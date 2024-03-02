@@ -192,7 +192,8 @@ export const resume = [
     category: "experience",
     icon: <FaBriefcase />,
     year: "2021 - 2022",
-    title: "Operated video cameras during services and special ceremonies at the Vatican and related venues. Assisted with video production, providing creative solutions and video editing skills for commercials, non-broadcast video productions, and television/closed circuit programming. Communicated with and assisted Video Production Manager with shooting, editing, and departmental organization. ",
+    title: "Camera Operator  <span> Brainnest - Vatican City, Italy </span> ",
+    desc: "Operated video cameras during services and special ceremonies at the Vatican and related venues. Assisted with video production, providing creative solutions and video editing skills for commercials, non-broadcast video productions, and television/closed circuit programming. Communicated with and assisted Video Production Manager with shooting, editing, and departmental organization."
   },
 
   {
@@ -200,7 +201,7 @@ export const resume = [
     category: "experience",
     icon: <FaBriefcase />,
     year: "2017 - 2018",
-    title: "Professional Shop Assistant <span> ESSO Station Service -  New Waltham, UK <span>",
+    title: "Professional Shop Assistant <span> ESSO Station Service -  New Waltham, UK </span>",
     desc: "Arranged products on display shelves, processed payments, and maintained shop cleanliness. Received, unpacked, and arranged new shipments from suppliers and vendors. Assisted customers in finding products, addressed inquiries and complaints, and provide shopping advice and recommendations. Collaborated with team members to keep the sales floor area clean and organized",
   },
 
