@@ -10,7 +10,7 @@ I am creating a portfolio using React to showcase the projects I have developed 
 
 ## 🚩 Table of Contents
 - [Features](#features)
--[Technologies Used](#technologies-used)
+- [Technologies Used](#technologies-used)
 - [Usage](#usage)
 - [License](#license)
 - [Questions](#questions)
