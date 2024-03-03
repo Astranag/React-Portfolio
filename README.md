@@ -33,7 +33,8 @@ I am creating a portfolio using React to showcase the projects I have developed 
 ## Usage 
 Feel free to explore the website to learn more about me, my skills, and the projects I've worked on. Click on project links to view detailed information about each project.
 
-* The live version of this project can be found: [Stivin J.M. Portfolio](voluble-lebkuchen-4191f2.netlify.app/)
+* The live version of this project can be found: [Stivin J.M. Portfolio](https://voluble-lebkuchen-4191f2.netlify.app/)
+
   ![Demo](src/assets/voluble-lebkuchen-4191f2.netlify.app_.png) 
 
 ## License
